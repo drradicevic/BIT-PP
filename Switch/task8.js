@@ -2,7 +2,7 @@
 ”, “*”, “/”) and prints out the appropriate result. Watch out for division by zero!   */
 
 var num1 = 2;
-var num2 = 0;
+var num2 = 2;
 var sign = "/";
 var result = " ";
 
