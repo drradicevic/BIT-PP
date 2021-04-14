@@ -2,6 +2,10 @@
 
 function calculates(number) {
   var count = 0;
+
+  if (number < 0) {
+    number *= -1;
+  }
   for (var i = number; i >= 1; i /= 10) {
     count++;
   }
@@ -9,4 +13,4 @@ function calculates(number) {
   return count;
 }
 
-console.log(calculates(555));
+console.log(calculates(-5555));
