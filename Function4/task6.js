@@ -4,7 +4,7 @@ Input array: [2, 4, -2, 7, -2, 4, 2]
 Output: The array is symmetric.
 
 Input array: [3, 4, 12, 8]
-Output: The array isn’t symmetric.   */
+Output: The array isn’t symmetric.  */
 
 function symmetric(array) {
   var result = [];
