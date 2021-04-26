@@ -5,18 +5,18 @@ Output: 2  */
 var array = [4, 2, 2, -1, 6, -10];
 
 function secondSmallest(array) {
-  var minimun = array[0];
-  var minimun2 = array[0];
+  var minimum = array[0];
+  var minimum2 = array[0];
   for (var i = 0; i < array.length; i++) {
-    if (array[i] < minimun) {
-      minimun = array[i];
+    if (array[i] < minimum) {
+      minimum = array[i];
     }
   }
   for (var j = 0; j < array.length; j++) {
-    if (array[j] < minimun2 && array[j] > minimun) {
-      minimun2 = array[j];
+    if (array[j] < minimum2 && array[j] > minimum) {
+      minimum2 = array[j];
     }
   }
-  return minimun2;
+  return minimum2;
 }
 console.log(secondSmallest(array));
