@@ -16,4 +16,4 @@ function insertsElement(element, position, array) {
   return result;
 }
 
-console.log(insertsElement(100, 3, [2, -2, 33, 12, 5, 8]));
+console.log(insertsElement(78, 3, [2, -2, 33, 12, 5, 8]));
