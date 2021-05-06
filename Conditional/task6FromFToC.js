@@ -6,4 +6,4 @@ Output : 60°C is 140 °F*/
 var f = 55;
 var c = (f - 32) / 1.8;
 
-console.log(f + "°F is " + c + "°C")
+console.log(f + "°F is " + c + "°C");

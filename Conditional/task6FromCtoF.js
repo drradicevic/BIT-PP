@@ -3,7 +3,7 @@ Formula : F = (9*C/5) + 32 [ where c = temperature in Celsius and f = temperatur
 Sample Input: 60°C
 Output : 60°C is 140 °F*/
 
-var c = 50;
-var f = (9 * c / 5) + 32;
+var c = 30;
+var f = (9 * c) / 5 + 32;
 
-console.log(c + "°C is " + f + "°F")
+console.log(c + "°C is " + f + "°F");
