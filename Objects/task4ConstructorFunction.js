@@ -11,10 +11,10 @@ function Recipe(name, cuis, complexity, ingr, time, instructions) {
   this.complexity = complexity;
   this.ingredients = ingr;
   this.time = time;
-  (this.instructions = instructions),
-    (this.ingred = function () {
-      return ingr.toString();
-    });
+  this.instructions = instructions;
+  this.ingred = function () {
+    return ingr.toString();
+  };
   this.preparation = function () {
     if (this.time < 15) {
       return "Less than 15 minutes";
