@@ -27,7 +27,6 @@ function culinaryRecipe(name, cuis, complexity, ingr, time, instructions) {
       return obj.cuisine;
     },
     deleteIngredient: function (value) {
-      var value = value;
       return obj.ingredients.filter(function (ingr) {
         return ingr !== value;
       });
@@ -43,4 +42,4 @@ var func = culinaryRecipe(
   10,
   "Create pastry for Pizza, put ingredienst on it, make 250 degrees and wait for 10 miuntes"
 );
-console.log(func);
+console.log(func.deleteIngredient("Ham"));

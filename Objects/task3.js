@@ -10,9 +10,7 @@ function createProject(description, language, gitUrl, isInDevelopment) {
     language: language,
     gitUrl: gitUrl,
     isInDevelopment: isInDevelopment,
-    printRepository: function () {
-      console.log(url);
-    },
+    printRepository: a(),
     isJava: function () {
       return language === "JavaScript";
     },
@@ -22,6 +20,10 @@ function createProject(description, language, gitUrl, isInDevelopment) {
         : "project is not in development";
     },
   };
+
+  function a() {
+    return gitUrl;
+  }
   return project;
 }
 
@@ -39,5 +41,6 @@ blog = createProject(
   false
 );
 
-console.log(calculate);
-console.log(blog);
+// console.log(calculate);
+// console.log(blog);
+console.log(blog.isDevelopment());
