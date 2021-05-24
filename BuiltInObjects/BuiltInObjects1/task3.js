@@ -39,4 +39,4 @@ function countElement(array) {
   return result;
 }
 
-console.log(countElement([-1, 4, 8.1, 3, 6, 2.3, 44, 2.11]));
+console.log(countElement([-1, 8.1, 3, 6, 2.3, 44, 2.11]));

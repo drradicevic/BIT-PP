@@ -10,6 +10,7 @@ function findMin(array) {
     }
   }
   output.minLastIndex = array.lastIndexOf(output.minValue);
+
   return output;
 }
 
