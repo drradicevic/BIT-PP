@@ -28,6 +28,19 @@ function findElements(array) {
   });
   return result;
 }
-var res = findElements(["JavaScript", "Programming", "fun", "product"]);
+var res = findElements([
+  "JavaScript",
+  "Programming",
+  "fun",
+  "product",
+  "Profesor",
+]);
 console.log(res);
 /*c.	Write a function that expects an array and a callback function that filters out some of the elements. Use functions defined in a) or b) to test it.  */
+function expect(array, callback) {
+  return array.filter(callback);
+}
+var callback = function (el) {
+  return el % 2 === 0;
+};
+console.log(expect([2, 3, 8, -2, 11, 4], callback));
