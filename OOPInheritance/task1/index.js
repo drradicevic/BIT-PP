@@ -28,8 +28,8 @@ function Developer(name, surname, job, salary, specialization) {
 
 Developer.prototype = Object.create(Employee.prototype);
 Developer.prototype.constructor = Developer;
-Developer.prototype.getSpecilization = function () {
-  return this.specialization;
+Developer.prototype.getSpecialization = function () {
+  return this.getSpecialization;
 };
 
 function Manager(name, surname, job, salary, department) {
@@ -59,7 +59,7 @@ var developer1 = new Developer(
   60000,
   "Front-end"
 );
-// console.log(developer1.getSpecilization());
+// console.log(developer1.getSpecialization());
 
 var manager1 = new Manager(
   "Janko",
