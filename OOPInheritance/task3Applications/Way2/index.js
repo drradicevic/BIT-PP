@@ -23,6 +23,19 @@ class Applications {
     this.licence = licence;
     this.stars = stars;
   }
+  isCCLicence() {
+    if (this.licence === "CC") {
+      return "This licence is " + this.licence;
+    } else {
+      return "This licence is not CC ";
+    }
+  }
+  like() {
+    return this.stars++;
+  }
+  showStars() {
+    return this.stars;
+  }
 }
 
 class WebApp extends Applications {
@@ -51,19 +64,6 @@ class WebApp extends Applications {
       return "Technology  which used  is not React";
     }
   }
-  isCCLicence() {
-    if (this.licence === "CC") {
-      return "This licence is " + this.licence;
-    } else {
-      return "This licence is not CC ";
-    }
-  }
-  like() {
-    return this.stars++;
-  }
-  showStars() {
-    return this.stars;
-  }
 }
 
 class MobileApp extends Applications {
@@ -82,19 +82,6 @@ class MobileApp extends Applications {
     } else {
       return "Technology  which used  is not Android";
     }
-  }
-  isCCLicence() {
-    if (this.licence === "CC") {
-      return "This licence is " + this.licence;
-    } else {
-      return "This licence is not CC ";
-    }
-  }
-  like() {
-    return this.stars++;
-  }
-  showStars() {
-    return this.stars;
   }
 }
 
