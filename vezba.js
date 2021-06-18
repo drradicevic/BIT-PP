@@ -11,7 +11,7 @@ var bananas = new Groccery("bananas", 150);
 var usualShoppingList = [apple, milk, bananas];
 console.log(usualShoppingList);
 
-function sumPrices(array) {
+function sumPrices() {
   var sum = 0;
   sum = apple.price + milk.price + bananas.price;
   return sum;
