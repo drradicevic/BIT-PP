@@ -1,19 +1,11 @@
-function Groccery(name, price) {
-  this.name = name;
-  this.price = price;
-}
-
-var apple = new Groccery("apple", 100);
-console.log(apple);
-var milk = new Groccery("milk", 80);
-var bananas = new Groccery("bananas", 150);
-
-var usualShoppingList = [apple, milk, bananas];
-console.log(usualShoppingList);
-
-function sumPrices() {
-  var sum = 0;
-  sum = apple.price + milk.price + bananas.price;
+function someExercise(num1, num2) {
+  var sum = num1 * num2;
   return sum;
 }
-console.log(sumPrices(usualShoppingList));
+
+function someFunctions(someExercise, num3) {
+  return someExercise - num3;
+}
+
+var result = someFunctions(someExercise(5, 8), 20);
+console.log(result);
