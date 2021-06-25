@@ -17,3 +17,4 @@ class Movie {
 
 var movie = new Movie("Titanik", 120, "drama");
 console.log(movie.getData());
+console.log(movie);
