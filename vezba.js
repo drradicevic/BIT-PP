@@ -3,6 +3,8 @@ function someExercise(num1, num2) {
   return sum;
 }
 
+console.log(someExercise);
+
 function someFunctions(someExercise, num3) {
   return someExercise - num3;
 }
