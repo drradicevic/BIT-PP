@@ -15,7 +15,14 @@ class Movie {
   }
 }
 
-var movie = new Movie("Titanik", 120, "drama");
-console.log(movie.getData());
-console.log(movie);
-console.log(movie.genreShort("drama"));
+class Program {
+  constructor(date) {
+    this.date = new Date(date);
+  }
+  getData() {
+    this.day = this.date.getDate();
+    this.month = this.date.getMonth() + 1;
+    this.year = this.date.getFullYear();
+    return this.day + "/" + this.month + "/" + this.year;
+  }
+}
