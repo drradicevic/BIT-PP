@@ -10,6 +10,6 @@ function increasesEachElement(array, number) {
   return newArray;
 }
 
-let result = increasesEachElement([4, 6, 11, -9, 2.1], 2);
+let result = increasesEachElement([4, 6, 11, -9, 2.1], 1);
 
 console.log(result);
