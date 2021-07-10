@@ -16,9 +16,6 @@
 
 // console.log(result);
 
-let getEvenNumbers = () => {
-  let arr = [6, 11, 9, 0, 3];
-  let the_evens = arr.filter((number) => number % 2 == 0);
-  console.log(the_evens);
-};
-getEvenNumbers();
+let input = [6, 11, 9, 0, 3];
+let getEvenNumbers = (arr) => arr.filter((number) => number % 2 == 0);
+console.log(getEvenNumbers(input));
