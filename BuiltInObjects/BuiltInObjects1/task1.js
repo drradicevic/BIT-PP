@@ -4,8 +4,8 @@ Output: [2, 2, 4, 4, 7, 7, 11, 11,  -2, -2, 1, 1]   */
 
 function diplicateArrayElements(array) {
   var newArray = [];
-  array.forEach(function (el) {
-    newArray.push(el, el);
+  array.forEach(function (elementl) {
+    newArray.push(elementl, elementl);
   });
   return newArray;
 }
